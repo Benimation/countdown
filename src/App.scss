@@ -1,0 +1,43 @@
+.app {
+  padding: 16px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.title {
+  font-size: 40px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.description {
+  font-size: 18px;
+  line-height: 1.5;
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+  margin-bottom: 32px;
+}
+
+.countdown {
+  display: flex;
+  justify-content: center;
+  
+  &__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 16px;
+  }
+  
+  &__number {
+    margin-bottom: 8px;
+    font-size: 32px;
+    font-weight: 500;
+  }
+  
+  &__label {
+    font-size: 16px;
+  }
+}
