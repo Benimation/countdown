@@ -19,15 +19,15 @@ function App() {
     0, Infinity
    );
   const hours = clamp(
-    differenceInHours(countDownDate, now) - Math.floor(days * 24),
+    differenceInHours(countDownDate, now) - days * 24,
     0, Infinity
    );
   const minutes = clamp(
-    differenceInMinutes(countDownDate, now) - Math.floor(days * 24 * 60)  - Math.floor(hours * 60),
+    differenceInMinutes(countDownDate, now) - days * 24 * 60  - hours * 60,
     0, Infinity
    );
   const seconds = clamp(
-    differenceInSeconds(countDownDate, now) - Math.floor(days * 24 * 60)  - Math.floor(hours * 60 * 60)  - Math.floor(minutes * 60),
+    differenceInSeconds(countDownDate, now) - days * 24 * 60  - hours * 60 * 60  - minutes * 60,
     0, Infinity
    );
   
